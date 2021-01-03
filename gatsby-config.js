@@ -2,11 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `hektor.dev`,
     author: {
-      name: `Héctor C. Guzmán`,
-      summary: `apasionado por la programación y educación informática.`,
+      name: `Hektor Costa Guzmán`,
+      summary: ``,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://hektor.dev/`,
+    siteUrl: `https://hektorprofe.net`,
     social: {
       twitter: `hektorprofe`,
     },
@@ -73,6 +73,6 @@ module.exports = {
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    //`gatsby-plugin-offline`,
   ],
 }

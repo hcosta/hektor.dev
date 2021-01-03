@@ -53,11 +53,7 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          Escrito por <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          <strong>Hektor Costa Guzmán</strong> es un apasionado de la educación y la programación. Instructor profesional en <a target="_blank" href="https://www.udemy.com/user/hctorcostaguzmn/" rel="noreferrer">Udemy</a> sobre Python y creador de la academia online <a target="_blank" href="https://www.hektorprofe.net/" rel="noreferrer">hektorprofe</a>.
         </p>
       )}
     </div>
