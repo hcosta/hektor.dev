@@ -165,7 +165,7 @@ p {
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-6) var(--spacing-0);
   padding: var(--spacing-0);
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 ul,
@@ -248,7 +248,7 @@ a:focus {
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-12);
 }
 
 .global-header {
@@ -285,6 +285,11 @@ a:focus {
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
+  color: white;
+}
+
+.header-link-home:hover {
+  color: black !important;
 }
 
 .bio {
@@ -331,5 +336,32 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+}
+
+.dot {
+  color: rgb(255, 239, 100);
+}
+
+.main-heading a:hover .dot {
+  color: rgb(13, 64, 233);
+}
+
+@media (max-width: 600px) {
+  .menu {
+    position: relative;
+    height: 60px;
+  }
+
+  .menu-content {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    z-index: 999;
+    text-align: right;
+  }
+  .main-heading {
+    position: relative;
+    z-index: 999;
   }
 }
