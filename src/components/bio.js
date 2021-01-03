@@ -53,7 +53,7 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          <strong>Hektor Costa Guzmán</strong> es un apasionado de la educación y la programación. Instructor profesional en <a target="_blank" href="https://www.udemy.com/user/hctorcostaguzmn/" rel="noreferrer">Udemy</a> sobre Python y creador de la academia online <a target="_blank" href="https://www.hektorprofe.net/" rel="noreferrer">hektorprofe</a>.
+          <strong>Hektor Costa Guzmán</strong> es un apasionado de la educación y la programación, instructor profesional en <a target="_blank" href="https://www.udemy.com/user/hctorcostaguzmn/" rel="noreferrer">Udemy</a> y creador de la academia de programación online <a target="_blank" href="https://www.hektorprofe.net/" rel="noreferrer">hektorprofe</a>.
         </p>
       )}
     </div>

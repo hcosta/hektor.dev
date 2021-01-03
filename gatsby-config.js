@@ -6,7 +6,7 @@ module.exports = {
       summary: ``,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://hektorprofe.net`,
+    siteUrl: `https://hektor.dev`,
     social: {
       twitter: `hektorprofe`,
     },
@@ -70,9 +70,9 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    //`gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    'gatsby-plugin-cname',
   ],
 }
