@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: 732px;
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -232,6 +232,8 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
+  transition-duration: 0.25s;
+  transition-delay: 0.025s;
 }
 
 a:hover,
@@ -347,10 +349,58 @@ a:focus {
   color: rgb(13, 64, 233);
 }
 
+.portfolio-el {
+  border-top: 1px dotted rgb(141, 141, 141);
+  padding: 20px 0px 15px;
+  font-size: 13px;
+  position: relative;
+  min-height: 240px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition-duration: 0.25s;
+  transition-delay: 0.025s;
+}
+
+.portfolio-el:hover {
+  background: rgb(245, 245, 245);
+}
+
+.portfolio-content {
+  margin-left: 215px;
+  padding-right: 12px;
+}
+
+.portfolio-content .title {
+  font-size: 18.5px;
+  font-weight: 600;
+  color: rgb(167, 0, 0);
+}
+
+.portfolio-content .techs {
+  margin-top: -6px;
+  font-size: 110%;
+  padding: 0;
+}
+
+.portfolio-content .links a {
+  color: rgb(50, 91, 228);
+}
+
+.portfolio-el p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.35em;
+}
+
+.portfolio-image {
+  position: absolute;
+  left: 0;
+}
+
 @media (max-width: 600px) {
   .menu {
     position: relative;
-    height: 60px;
+    height: 54px;
   }
 
   .menu-content {
@@ -358,10 +408,20 @@ a:focus {
     bottom: 5px;
     left: 10px;
     z-index: 999;
-    text-align: right;
+    font-size: var(--fontSize-1);
   }
   .main-heading {
     position: relative;
     z-index: 999;
+  }
+  .portfolio-el {
+    position: relative;
+    min-height: 165px;
+  }
+  .portfolio-image img {
+    width: 100px;
+  }
+  .portfolio-content {
+    margin-left: 116px;
   }
 }
