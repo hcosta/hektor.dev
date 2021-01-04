@@ -385,6 +385,10 @@ a:focus {
   color: rgb(50, 91, 228);
 }
 
+.portfolio-content a {
+  color: rgb(50, 91, 228);
+}
+
 .portfolio-el p {
   padding: 0;
   margin: 0;
@@ -400,7 +404,7 @@ a:focus {
 @media (max-width: 600px) {
   .menu {
     position: relative;
-    height: 54px;
+    height: 58px;
   }
 
   .menu-content {

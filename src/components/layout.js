@@ -8,7 +8,7 @@ const Layout = ({ location, title, children }) => {
 
   header = (
     <h1 className="main-heading">
-      <Link to="/">&nbsp;hektor<span class="dot">.</span>dev</Link>
+      <Link to="/">&nbsp;hektor<span className="dot">.</span>dev</Link>
     </h1>
   )
 
@@ -16,11 +16,11 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">
         {header}
-        <div class="menu" style={{marginTop: '-25px', textAlign: 'right', background: '#00C90F'}} >
-          <div class="menu-content">
+        <div className="menu" style={{marginTop: '-25px', textAlign: 'right', background: '#00C90F'}} >
+          <div className="menu-content">
             <Link className="header-link-home" to="/">
               Blog
-            </Link>&nbsp;&nbsp;
+            </Link>&nbsp;&nbsp;&nbsp;
             {/* <a href="https://github.com/hcosta" target="_blank"  rel="noreferrer" className="header-link-home">Github</a>&nbsp;&nbsp; */}
             <Link className="header-link-home" to="/portafolio">
               Portafolio
