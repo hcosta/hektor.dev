@@ -369,6 +369,10 @@ a:focus {
   padding-right: 12px;
 }
 
+.portfolio-content-no-image {
+  margin-left: 0px;
+}
+
 .portfolio-content .title {
   font-size: 18.5px;
   font-weight: 600;
@@ -428,4 +432,9 @@ a:focus {
   .portfolio-content {
     margin-left: 116px;
   }
+}
+
+[role="textarea"]:active,
+[role="textarea"]:focus {
+  border: none;
 }
