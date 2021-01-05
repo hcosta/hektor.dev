@@ -432,6 +432,12 @@ a:focus {
   .portfolio-content {
     margin-left: 116px;
   }
+
+  .portfolio-content-no-image {
+    position: inherit;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 [role="textarea"]:active,
