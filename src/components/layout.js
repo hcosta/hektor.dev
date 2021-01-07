@@ -19,11 +19,11 @@ const Layout = ({ location, title, children }) => {
         <div className="menu" style={{marginTop: '-25px', textAlign: 'right', background: '#00C90F'}} >
           <div className="menu-content">
             <Link className="header-link-home" to="/">
-              Blog
+              blog
             </Link>&nbsp;&nbsp;&nbsp;
-            {/* <a href="https://github.com/hcosta" target="_blank"  rel="noreferrer" className="header-link-home">Github</a>&nbsp;&nbsp; */}
+            {/* <a href="https://github.com/hcosta" target="_blank"  rel="noreferrer" className="header-link-home">github</a>&nbsp;&nbsp; */}
             <Link className="header-link-home" to="/portafolio">
-              Portafolio
+              portafolio
             </Link>&nbsp;&nbsp;&nbsp;
           </div>
         </div>

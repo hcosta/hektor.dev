@@ -39,7 +39,9 @@ const PortafolioPage = ({ data, location }) => {
       <div className="portfolio-el" role="presentation"
         onMouseEnter={e => e.currentTarget.children[0].children[0].src = Hp2} 
         onMouseLeave={e => e.currentTarget.children[0].children[0].src = Hp1}>
-        <div className="portfolio-image"><img src={Hp1} alt="hp1" /></div>
+        <div className="portfolio-image">
+          <img src={Hp1} alt="hp1" />
+        </div>
         <div className="portfolio-content">
           <p className="title">Academia Hektor Profe</p>
           <p className="techs"><small><b>2018-?</b> · Nuxt, Django, Firebase</small></p>
@@ -56,10 +58,12 @@ const PortafolioPage = ({ data, location }) => {
       <div className="portfolio-el" role="presentation"
         onMouseEnter={e => e.currentTarget.children[0].children[0].src = Edv2} 
         onMouseLeave={e => e.currentTarget.children[0].children[0].src = Edv1}>
-        <div className="portfolio-image"><img src={Edv1} alt="edv1" /></div>
+        <div className="portfolio-image">
+          <img src={Edv1} alt="edv1" />
+        </div>
         <div className="portfolio-content">
           <p className="title">Escuela de videojuegos</p>
-          <p className="techs"><small><b>2015-2017</b> · Unity, GameMaker: Studio</small></p>
+          <p className="techs"><small><b>2016-2017</b> · Unity, GameMaker: Studio</small></p>
           <p className="description">Con el objetivo de aprender más sobre desarrollo de videojuegos decidí compartir con el mundo mis nuevos conocimientos en un canal de Youtube. Una cosa llevó a otra y acabé publicando más de 300 vídeos entre tutoriales de Unity y GameMaker: Studio. Tengo el canal abandonado desde hace años pero ha seguido sumando seguidores hasta llegar a más de 80.000, una locura.</p>
           <p className="links">
             [<a href="https://docs.hektorprofe.net/escueladevideojuegos/"
@@ -73,7 +77,9 @@ const PortafolioPage = ({ data, location }) => {
       <div className="portfolio-el" role="presentation"
         onMouseEnter={e => e.currentTarget.children[0].children[0].src = Sopa2} 
         onMouseLeave={e => e.currentTarget.children[0].children[0].src = Sopa1}>
-        <div className="portfolio-image"><img src={Sopa1} alt="sopa1" /></div>
+        <div className="portfolio-image">
+          <img src={Sopa1} alt="sopa1" />
+        </div>
         <div className="portfolio-content">
           <p className="title">Word Search Puzzle Soupmania</p>
           <p className="techs"><small><b>2015</b> · GameMaker: Studio, Photoshop, Android</small></p>
@@ -90,15 +96,17 @@ const PortafolioPage = ({ data, location }) => {
       <div className="portfolio-el" role="presentation"
         onMouseEnter={e => e.currentTarget.children[0].children[0].src = Mp2} 
         onMouseLeave={e => e.currentTarget.children[0].children[0].src = Mp1}>
-        <div className="portfolio-image"><img src={Mp1} alt="mp1" /></div>
+        <div className="portfolio-image">
+          <img src={Mp1} alt="mp1" />
+        </div>
         <div className="portfolio-content">
           <p className="title">Manga Phoenix App</p>
-          <p className="techs"><small><b>2014-2015</b> · Angularjs, Apache Cordova, Django, Android</small></p>
-          <p className="description">Lo que empezó como una app privada se fue de madres y se volvió un éxito mundial cuando la subí a la Play Store alentado por mis colegas. Este lector scrapeaba directamente de 13 webs más de 1000 series. Alcanzó el top 1 de la categoría Comics en 6 paises hispanos (<small><a href="https://web.archive.org/web/20160406190801if_/http://mangaphoenixapp.com/img/top.jpg" target="_blank" rel="noreferrer">captura</a></small>). Decidí retirarla para evitar problemas... pero sin duda fue mi primer gran e inesperado éxito como programador independiente.</p>
-          <p className="links">
+          <p className="techs"><small><b>2014-2015</b> · Angularjs, Django, Apache Cordova, Android</small></p>
+          <p className="description">Lo que empezó como una app privada se volvió un éxito mundial cuando la subí a la Play Store alentado por mis colegas. Este lector que scrapeaba y descargaba de 13 webs diferentes alcanzó, en muy poco tiempo, <a href="https://web.archive.org/web/20160406190801if_/http://mangaphoenixapp.com/img/top.jpg" target="_blank" rel="noreferrer">el Top 1</a> de la categoría Cómics en 6 paises hispanos. Nunca imaginé que conseguiría tanta repercusión; y fue precisamente por eso y por la poca ética del proyecto que la retiré. Sin embargo no olvidaré la experiencia que me otorgó en la gestión de una comunidad masiva. Irónicamente el fénix jamás resucitó de sus cenizas; DEP.</p>
+          {/* <p className="links">
             [<a href="https://web.archive.org/web/20160612194111/http://mangaphoenixapp.com/es"
-                target="_blank" rel="noreferrer">Web de 2015 en Wayback Machine</a>]
-          </p>
+                target="_blank" rel="noreferrer">Web en Wayback Machine</a>]
+          </p> */}
         </div>
       </div>
 
