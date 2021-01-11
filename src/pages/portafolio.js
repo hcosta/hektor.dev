@@ -26,6 +26,9 @@ import Brisca2 from "../../content/assets/brisca.gif"
 import Primi1 from "../../content/assets/primi.png"
 import Primi2 from "../../content/assets/primi.gif"
 
+import Eng3d1 from "../../content/assets/eng3d.png"
+import Eng3d2 from "../../content/assets/eng3d.gif"
+
 const PortafolioPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   return (
@@ -117,16 +120,33 @@ const PortafolioPage = ({ data, location }) => {
       <h2 style={{fontSize: '1.45em', fontWeight: '600', fontFamily:'Verdana'}}>CONCEPTOS</h2>
 
       <div className="portfolio-el" role="presentation" style={{minHeight: '150px'}}
+        onMouseEnter={e => e.currentTarget.children[0].children[0].src = Eng3d2} 
+        onMouseLeave={e => e.currentTarget.children[0].children[0].src = Eng3d1}>
+        <div className="portfolio-image">
+          <img src={Eng3d1} id="Eng3d" alt="Eng3d1" style={{minHeight: '117px', maxWidth: '200px'}} />
+        </div>
+        <div className="portfolio-content">
+          <p className="title">Experimental 3d engine</p>
+          <p className="techs"><small><b>2020</b> · C, SDL2</small></p>
+          <p className="description" style={{marginTop:'-5px'}}>Motor de pruebas programado desde cero en C y SDL para estudiar como renderizar gráficos vectoriales en entornos tridimensionales.</p>
+          <p className="links" style={{marginTop:'-5px'}}>
+            [<a href="https://github.com/hcosta/3d-engine"
+                target="_blank" rel="noreferrer">Repositorio Github</a>]
+          </p>
+        </div>
+      </div>
+
+      <div className="portfolio-el" role="presentation" style={{minHeight: '150px'}}
         onMouseEnter={e => e.currentTarget.children[0].children[0].src = Hex2} 
         onMouseLeave={e => e.currentTarget.children[0].children[0].src = Hex1}>
         <div className="portfolio-image">
-          <img src={Hex1} id="hex" alt="hex1" />
+          <img src={Hex1} id="e3d" alt="e3d" />
         </div>
         <div className="portfolio-content">
           <p className="title">Hexagon Tribute</p>
           <p className="techs"><small><b>2015</b> · GameMaker: Studio, Android</small></p>
-          <p className="description">Prototipo desarrollado en honor al videojuego Super Hexagon de Terry Cavanagh cuya jugabilidad siempre me ha maravillado.</p>
-          <p className="links">
+          <p className="description" style={{marginTop:'-4px'}}>Prototipo desarrollado en honor al videojuego Super Hexagon de Terry Cavanagh cuya jugabilidad siempre me ha maravillado.</p>
+          <p className="links" style={{marginTop:'-4px'}}>
             [<a href="https://apkpure.com/es/hexagon-tribute/info.hcosta.hexagon.tribute"
                 target="_blank" rel="noreferrer">Web de respaldo</a>]
             [<a href="https://apkpure.com/es/hexagon-tribute/info.hcosta.hexagon.tribute/download?from=details"
@@ -144,8 +164,8 @@ const PortafolioPage = ({ data, location }) => {
         <div className="portfolio-content">
           <p className="title">Simulador Primitiva</p>
           <p className="techs"><small><b>2012</b> · Python, WxPython</small></p>
-          <p className="description" style={{marginTop:'-4px'}}>Experimento para visualizar las posibilidades de conseguir un premio.</p>
-          <p className="links" style={{marginTop:'-4px'}}>
+          <p className="description" style={{marginTop:'-5px'}}>Experimento para visualizar las posibilidades de conseguir un premio.</p>
+          <p className="links" style={{marginTop:'-5px'}}>
             [<a href="https://github.com/hcosta/primitiva-python"
                 target="_blank" rel="noreferrer">Repositorio Github</a>]
           </p>
@@ -161,8 +181,8 @@ const PortafolioPage = ({ data, location }) => {
         <div className="portfolio-content">
           <p className="title">La Brisca</p>
           <p className="techs"><small><b>2011</b> · Java</small></p>
-          <p className="description">Mi primer juego ever, programado en Java utilizando componentes de la interfaz gráfica en lugar de renderizado en la pantalla.</p>
-          <p className="links">
+          <p className="description" style={{marginTop:'-1px'}}>Mi primer juego ever, programado en Java utilizando componentes de la interfaz gráfica en lugar de renderizado en la pantalla.</p>
+          <p className="links" style={{marginTop:'-1px'}}>
             [<a href="https://github.com/hcosta/la-brisca"
                 target="_blank" rel="noreferrer">Repositorio Github</a>]
             [<a href="https://github.com/hcosta/la-brisca/raw/master/bin/LaBrisca.jar"
