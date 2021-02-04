@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: 732px;
+  --maxWidth-wrapper: 650px;
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -350,14 +350,17 @@ a:focus {
 }
 
 .portfolio-el {
-  border-top: 1px dotted rgb(141, 141, 141);
+  border-bottom: 1px dotted rgb(141, 141, 141);
   padding: 20px 0px 15px;
   font-size: 13px;
   position: relative;
-  min-height: 240px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition-duration: 0.25s;
   transition-delay: 0.025s;
+}
+
+.last {
+  border-bottom: none;
 }
 
 .portfolio-el:hover {
@@ -383,6 +386,7 @@ a:focus {
   margin-top: -6px;
   font-size: 110%;
   padding: 0;
+  font-weight: 600;
 }
 
 .portfolio-content .links a {
@@ -424,7 +428,6 @@ a:focus {
   }
   .portfolio-el {
     position: relative;
-    min-height: 165px;
   }
   .portfolio-image img {
     width: 100px;
@@ -435,9 +438,41 @@ a:focus {
 
   .portfolio-content-no-image {
     position: inherit;
-    margin-left: 0px;
-    padding-right: 0px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
+  .portfolio-h2 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .portfolio-el:hover {
+    background: inherit !important;
+  }
+}
+.portfolio-h2 {
+  padding: 0px 15px;
+  font-size: 1.45em;
+  font-weight: 600;
+  font-family: Verdana;
+  padding-bottom: 8px;
+  color: rgb(30, 30, 30);
+  border-bottom: 3px solid rgb(30, 30, 30);
+}
+.portfolio-content {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.portfolio-el {
+  padding-top: 13px;
+  padding-bottom: 10px;
 }
 
 [role="textarea"]:active,
